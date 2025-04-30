@@ -1,0 +1,133 @@
+Annadaan Connect
+
+About the Project
+Annadaan Connect is a food sharing platform designed to reduce food waste and address hunger in communities across India. The name "Annadaan" comes from the Sanskrit term for "food donation," a concept deeply rooted in Indian culture as a form of charity and goodwill.
+This platform connects people who have excess food with those who need it, offering both free donation options and "pay what you can" models to maintain dignity and accessibility.
+Show Image
+Features
+For Food Donors
+
+Create listings for excess food (home-cooked meals, restaurant surplus, groceries)
+Choose between free donations or set a flexible price
+Earn karma points for every donation
+Track impact through a personal dashboard
+Redeem karma points for partner rewards
+
+For Food Recipients
+
+Browse food listings by location and preferences
+Option to get food for free or pay what you can
+Anonymous pickup options for dignity preservation
+Rate and thank donors
+Become donors themselves in the future
+
+Community Features
+
+Location-based matching system
+In-app messaging for coordination
+Review and rating system
+Community recognition for regular donors
+Social sharing to spread awareness
+
+Technology Stack
+Backend
+
+Java 17
+Spring Boot 2.7.0
+Spring Security for authentication
+Spring Data JPA for database operations
+H2 Database (development) / MySQL (production)
+RESTful API architecture
+
+Frontend
+
+HTML5, CSS3, JavaScript
+Bootstrap 5 for responsive design
+Custom animations with GSAP
+Form validation with JavaScript
+Interactive maps for location services
+
+Setup Instructions
+Prerequisites
+
+JDK 17 or higher
+Maven 3.8+
+MySQL (for production deployment)
+IDE with Spring support (IntelliJ IDEA recommended)
+
+Local Development Setup
+
+Clone the repository
+bashgit clone https://github.com/yourusername/annadaan-connect.git
+cd annadaan-connect
+
+Build the project
+bashmvn clean install
+
+Run the application
+bashmvn spring-boot:run
+The application will be available at http://localhost:8080
+Database Setup
+
+The application uses H2 in-memory database by default for development
+For production, update application.properties with your MySQL credentials
+
+
+
+Configuration
+Key configuration files:
+
+application.properties: Main application configuration
+data.sql: Initial data setup (sample users, listings)
+
+Project Structure
+annadaan-connect/
+├── src/
+│   ├── main/
+│   │   ├── java/com/annadaan/
+│   │   │   ├── controllers/    # API endpoints and page controllers
+│   │   │   ├── models/         # Entity classes
+│   │   │   ├── repositories/   # Data access interfaces
+│   │   │   ├── services/       # Business logic
+│   │   │   ├── config/         # Configuration classes
+│   │   │   └── AnnadaanConnectApplication.java
+│   │   │
+│   │   └── resources/
+│   │       ├── static/         # Static resources (CSS, JS, images)
+│   │       ├── templates/      # Thymeleaf templates
+│   │       └── application.properties
+│   │
+│   └── test/                   # Unit and integration tests
+│
+├── pom.xml                     # Maven dependencies
+└── README.md
+Screenshots
+Homepage
+Show Image
+Food Listing Dashboard
+Show Image
+Mobile View
+Show Image
+Roadmap
+
+ Core food sharing functionality
+ User authentication system
+ Basic karma points system
+ Integration with payment gateways for "pay what you can"
+ Mobile app development
+ Partnership with NGOs and food banks
+ Advanced analytics for impact measurement
+ Multi-language support for regional inclusivity
+
+Contributing
+We welcome contributions to Annadaan Connect! Please feel free to submit a Pull Request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+Acknowledgements
+
+Special thanks to all food donors and community volunteers
+Inspired by the traditional Indian practice of Annadaan
+Built with a commitment to reducing hunger and food waste in our communities
+
+Contact
+For questions or feedback, please reach out at anshulchandel1780@gmail.com
